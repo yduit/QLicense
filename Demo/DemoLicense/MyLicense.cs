@@ -25,6 +25,12 @@ namespace DemoLicense
         [ShowInLicenseInfo(true, "Enable Feature 03", ShowInLicenseInfoAttribute.FormatType.String)]
         public bool EnableFeature03 { get; set; }
 
+        [DisplayName("Expiration Date")]
+        [Category("License Options")]
+        [XmlElement("ExpirationDate")]
+        [ShowInLicenseInfo(true, "Expiration Date", ShowInLicenseInfoAttribute.FormatType.Date)]
+        public DateTime ExpirationDate { get; set; }
+        
         public MyLicense()
         {
             //Initialize app name for the license
